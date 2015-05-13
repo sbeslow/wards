@@ -12,15 +12,37 @@
 
     </head>
     <body>
-        <h1>Alderman Finder</h1>
+
+        <style>
+            p {
+                text-align:center;
+            }
+
+            #inputDiv{
+                margin-top: 80px; 
+            }
+
+            #madeBy {
+                position: absolute;
+                bottom: 5px;
+            } 
+        </style>
+
+        <h1 style="text-align:center;color:blue;">Alderman Finder</h1>
         <p>Enter your ward number to find your alderman</p>
-        <div class="form-group">
-            <label for="wardNumber">Ward Number</label>
-            <input type="email" class="form-control" id="wardNumber" placeholder="Enter ward number">
+
+
+        <div class="container">
+            <div class="form-group" id="inputDiv">
+                <label for="wardNumber">Ward Number</label>
+                <input type="email" class="form-control" id="wardNumber" placeholder="Enter ward number">
+            </div>
+            <button type="button" class="btn btn-warning">Submit</button>
         </div>
-        <button type="button" class="btn btn-default">Default</button>
         <br>
-        <a href="http://www.github.com/sbeslow/wards">Find the code to this site</a>
+        <div class="container" id="madeBy">
+            <a href="http://www.github.com/sbeslow/wards">Find the code to this site</a>
+        </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
