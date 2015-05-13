@@ -37,7 +37,7 @@
                 <label for="wardNumber">Ward Number</label>
                 <input type="email" class="form-control" id="wardNumber" placeholder="Enter ward number">
             </div>
-            <button type="button" class="btn btn-warning">Submit</button>
+            <button type="button" class="btn btn-warning" id="submitButton">Submit</button>
         </div>
         <br>
         <div class="container" id="madeBy">
@@ -47,5 +47,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        
+        <script src="js/wardFinder.js"></script>
+
+        <script>
+            $('#submitButton').on('click', function () {
+                var ward = $("#wardNumber").val();
+                findAlderman(ward);
+                $("#wardNumber").val("");
+            })
+        </script>
     </body>
 </html>
